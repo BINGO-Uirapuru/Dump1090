@@ -141,7 +141,7 @@ para acessar o arquivo de configuração do container use o comando a seguir:
 
  Abra o arquivo de configuração do dump1090 (geralmente chamado de "dump1090.conf") e adicione as seguintes linhas:
  
- ```Shellscript
+ ```bash
  
  --lat <latitude> --lon <longitude> --max-range <distância>
  ```
