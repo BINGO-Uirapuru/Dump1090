@@ -102,7 +102,7 @@ Por fim, o script reinicia o Dump1090 para carregar as informações atualizadas
 
 O arquivo dump1090_cron deve ser colocado na pasta /etc/cron.d/ no contêiner e ter o seguinte conteúdo:
 
-```shell
+```bash
 
 # Atualizar as informações de voos a cada 5 minutos
 */5 * * * * root /opt/dump1090/tools/update-flightaware.sh >> /var/log/dump1090.log 2>&1
@@ -111,13 +111,13 @@ Esse arquivo cron define que o script de atualização de voos deve ser executad
 
 Para construir a imagem Docker a partir deste Dockerfile, execute o seguinte comando no mesmo diretório que o arquivo Dockerfile:
 
-```shell
+```bash
 
 sudo docker build -t dump1090 .
 ```
 Isso criará uma imagem Docker com o nome "dump1090" que você pode executar com o comando:
 
-```shell
+```bash
 
 sudo docker run -p 8080:8080 --privileged dump1090
 ```
