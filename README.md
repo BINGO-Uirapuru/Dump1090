@@ -98,7 +98,10 @@ para acessar o arquivo de configuração do contêiner use o comando a seguir:
 
 Para o bingo uirapuru temos as seguintes coordenadas: 
 
-                      7°12’41.9″S 35°54’29.5″W 
+```bash
+ 7°12’41.9″S 35°54’29.5″W
+```     
+    
 ```bash
 <latitude> = -7,69833
 ```
