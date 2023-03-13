@@ -16,10 +16,10 @@ WORKDIR /opt/dump1090
 
 RUN make
 
-ADD dump1090_cron /etc/cron.d/dump1090_cron
+ADD dump1090_cron.sh /etc/cron.d/dump1090_cron.sh
 
-RUN chmod 0644 /etc/cron.d/dump1090_cron
+RUN chmod 0644 /etc/cron.d/dump1090_cron.sh
 
-RUN crontab /etc/cron.d/dump1090_cron
+RUN /bin/bash -c crontab /etc/cron.d/dump1090_cron.sh
 
 CMD ["cron", "-f"]
